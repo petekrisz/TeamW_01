@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cukrászda</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>SZPK Cake Shop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body>
-    <header>
+    <header id="header">
+        <h1><a href="index.html"><img src="images/SZPK_logo.webp" alt="SZPK"></a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Kezdőlap</a></li>
@@ -16,16 +23,45 @@
             </ul>
         </nav>
     </header>
+
+    
+
+
+
+
+
+
     <main>
         <section id="home">
-            <h1>Cukrászda</h1>
-            <p>Szeretjük a finomságokat! A cukrászdánkban sütemények, fagylalt és kávé fogyasztható.</p>
-            <img src="sütemény.jpg" alt="Sütemény">
-            <img src="fagylalt.jpg" alt="Fagylalt">
-            <img src="kava.jpg" alt="Kávé">
-            <p>Nézzük meg a legújabb tortákat!</p>
-            <a href="Torták.html">Torták</a>
+            <div class="content">
+                <header>
+                    <h2>SZPK Cake Shop</h2>
+                    <p>Szeretjük a finomságokat! Cukrászdánkban sütemények, fagylalt és kávé fogyasztható.</p>
+                    <div id="products">
+                        <div><img src="images/cookie.svg" width="15px" alt="Sütemény"></div>
+                        <div><img src="images/icecream.svg" alt="Fagylalt"></div>
+                        <div><img src="images/coffee.svg" alt="Kávé"></div>
+                        <div><a href="Torták.html"><img src="images/cake.svg" alt="Torta"></a></div>
+                    </div>
+
+                </header>
+                <span class="image"><img src="images/Cappuccino-Cake.jpg" alt="" /></span>
+                <div id="links">    
+                    <div>
+                        <p>Elérhetőségeink:</p>
+                        <ul>
+                                <li><a href="https://github.com/petekrisz/TeamW_01"><span class="label">GitHub</span></a></li></a></li>
+                                <li><a href="#"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
         </section>
+        
        
       </main>
 

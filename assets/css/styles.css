@@ -1,0 +1,285 @@
+@font-face{
+  font-family: "Arkhip";
+  src: url("fonts/Arkhip_font.ttf");
+}
+@font-face{
+  font-family: "Eklektik";
+  src: url("fonts/eklekti0.ttf");
+}
+@font-face{
+  font-family: "Dinerr";
+  src: url("fonts/dinerr.ttf");
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+	background: rgb(39, 40, 51);
+}
+
+body, input, select, textarea {
+	color: rgba(255, 255, 255, 0.75);
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-size: 15pt;
+	font-weight: 100;
+	line-height: 1.75em;
+}
+
+a {
+	-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border-bottom: dotted 1px;
+	color: #e44c65;
+	text-decoration: none;
+}
+
+	a:hover {
+		color: #e44c65 !important;
+		border-bottom-color: transparent;
+	}
+
+/*nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+  
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+  
+nav a:hover {
+  color: #ccc;
+}
+*/  
+/*main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+  
+section {
+  background-color:rgb(39, 40, 51);;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+  
+section:last-child {
+  border-bottom: none;
+}*/
+  
+/*h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+  
+img {
+  width: 100%;
+}*/
+  
+form {
+  max-width: 400px;
+}
+  
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+  
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+}
+  
+button[type=submit] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+#header {
+  background: rgba(39, 40, 51, 0.965);
+  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+  cursor: default;
+  height: 3.5em;
+  left: 0;
+  line-height: 3.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+  #header h1 {
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  #header h1 a{
+    border: 0;
+    color: inherit;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    outline: 0;
+  }
+
+  #header h1 img {
+    height: 100%;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+  } 
+  
+  #header nav {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    
+  }
+
+    #header nav ul {
+      margin: 0;
+    }
+
+      #header nav ul li {
+        display: inline-block;
+        margin-left: 1em;
+        
+        
+      }
+        #header nav ul li a, #header nav ul li span {
+          border: 0;
+          color: inherit;
+          display: inline-block;
+          height: inherit;
+          line-height: inherit;
+          outline: 0;
+        }
+
+#home {
+  background-attachment: fixed;
+  background-image: url("../../images/pink_cakeb.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21;
+}
+      
+  #home .content {
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 6em;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1;
+  }
+    
+    #home .content p{
+      text-align: center;
+      vertical-align: middle;
+    }
+    #home .content ul {
+      margin: 0;
+      display: inline-flex;
+    }
+
+      #home .content ul li {
+        display: inline-block;
+        margin-left: 1em;
+        
+        
+      }
+
+
+
+    #home .content header {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 60%;
+    }
+      
+      #home .content header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        font-family:"Dinerr";
+        font-style: italic;
+        color: #e44c65;
+      }
+      
+      #home .content header p {
+        margin: 0.5em 0 0 0;
+        top: 0;
+      }
+      
+      #home .content .image {
+        border-radius: 100%;
+        display: inline-block;
+        height: 18em;
+        margin-left: 3em;
+        vertical-align: middle;
+        width: 18em;
+      }
+      
+        #home .content .image img {
+          border-radius: 100%;
+          display: block;
+          width: 100%;
+        }
+#products{
+  display:flex;
+} 
+#products img{
+  size: 15px;
+}
+#products div{
+  flex:1;
+  padding: 15px;
+}  
+
+#links {
+  position:relative;
+  height: 10em;
+}
+
+#links div{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+
+}
+
+
+  
