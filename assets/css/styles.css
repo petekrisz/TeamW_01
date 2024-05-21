@@ -18,12 +18,12 @@
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline
+	vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: flex;}
 
 html {
 	box-sizing: border-box;
@@ -83,7 +83,7 @@ nav a:hover {
 }*/
   
 section {
-  background-color:rgb(39, 40, 51);;
+  background-color:rgb(39, 40, 51);
   padding: 20px;
   border-bottom: 1px solid #ccc;
 }
@@ -278,8 +278,23 @@ button[type=submit] {
   position: absolute;
   bottom: 0;
   text-align: center;
-
 }
 
+#tortak{
+  width: 90%;
+  margin: 4em auto;
+}
 
-  
+#tortak h2 {
+  font-family:"Dinerr";
+  font-size: 2em;
+  color: #e44c65;
+  text-indent: 2.5em;
+}
+
+#tortak h3 {
+  color: #e44c65;
+  font-variant: small-caps;
+  margin-top: 0.3em;
+  text-align: center;
+}
