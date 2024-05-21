@@ -298,3 +298,7 @@ button[type=submit] {
   margin-top: 0.3em;
   text-align: center;
 }
+.price{
+  text-align: right;
+  font-style: italic;
+}
