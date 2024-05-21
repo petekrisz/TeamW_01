@@ -17,23 +17,27 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="rólunk.html">Rólunk</a></li>
                     <li><a href="Torták.html">Torták</a></li>
                     <li><a href="Megrendelés.html">Megrendelés</a></li>
-                    <li><a href="rólunk.html">Rólunk</a></li>
-                    <li><a href="regisztrácio.html">Regisztráció</a></li>
+                    <li><a href="regisztrácio.html" class="button">Regisztráció</a></li>
                 </ul>
             </nav>
         </header>
     <main>
-        
-        <section id="regisztracio">
-          <h1>Regisztráció</h1><p>Regisztrálj velünk!</p><p>Ne feledj megadni a szükséges adatokat!</form action="#" method="post">
-            <label for="nev">Név:</label><input type="text" id="nev"><br />
-            <label for="email">Email:</label><input type="email" id="email"><br />
-            <label for="jelszo">Jelszó:</label><input type="password" id="jelszo"><br />
-            <button type="submit">Regisztráció</button><br/>
-          </form>
-
+        <div id="background"> 
+            <section id="regisztracio" class="conatiner-fluid col-lg-5 col-sm-8 col-xs-12">
+                <h2>Registration</h2>
+                    <p>Regisztrálj velünk!</p>
+                    <p>Ne feledj megadni a szükséges adatokat!</p>
+                    <form action="#" method="post">
+                        <input type="text" name="nev" id="nev" value="" placeholder="Név"><br />
+                        <input type="email" name="email" id="email" value="" placeholder="Email"><br />
+                        <input type="password" name="jelszo" id="jelszo" value="" placeholder="Jelszó"><br />
+                        <input type="submit" value="Regisztráció" class="primary"><br/>
+                    </form>
+            </section>
+        </div>
       </main>
 
       <script src="script.js"></script>

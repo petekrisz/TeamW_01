@@ -12,39 +12,51 @@
     
     </head>
     <body>
-        <header id="header">
+        <header id="header" class="conatiner-fluid">
             <h1><a href="index.html"><img src="images/SZPK_logo.webp" alt="SZPK"></a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="rólunk.html">Rólunk</a></li>
                     <li><a href="Torták.html">Torták</a></li>
                     <li><a href="Megrendelés.html">Megrendelés</a></li>
-                    <li><a href="rólunk.html">Rólunk</a></li>
-                    <li><a href="regisztrácio.html">Regisztráció</a></li>
+                    <li><a href="regisztrácio.html" class="button">Regisztráció</a></li>
                 </ul>
             </nav>
         </header>
     <main>
         
-        <section id="megrendelés">
-            <h1>Megrendelés</h1>
-            <form action="#">
-                <label for="torta">Torta:</label>
-                <select id="torta">
-                    <option value="fekete">Fekete Erdő (10 000 Ft)</option>
-                    <option value="almasmakos">Szabolcsi Almás Mákos (8 000 Ft)</option>
-                    <option value="kinder">Kinder Maxiking(12 000 Ft)</option>
-                </select>
-                <label for="datum">Megrendelés dátuma:</label>
-                <input type="date" id="datum">
-                <label for="komment">Koment:</label>
-                <textarea id="komment"></textarea>
-                <button type="submit"> Megrendelés </button>
-            </form>
-            <p>Ha megrendelést helyez el, rövidesen visszajelezünk!</p>
-            <p>Ha bármilyen kérdése vagy probléma van, forduljon hozzánk!</p>
-            <a href="rólunk.html">Rólunk </a>
-        </section>
+        <div id="background"> 
+            <section id="megrendeles" class="conatiner-fluid col-lg-7 col-sm-9 col-xs-12">
+                <h2>Order</h2>
+                <form action="#">
+                    <select id="torta" name="torta" id="torta">
+                        <option value="null"> - Torták - </option>
+                        <option value="BOCI">Boci torta (9 000 Ft)</option>
+                        <option value="PUNCS">Puncstorta (10 000 Ft)</option>
+                        <option value="OROSZ">Oroszkrém torta (11 500 Ft)</option>
+                        <option value="BAILEYS">Baileys torta (13 500 Ft)</option>
+                        <option value="BARACK">Barackos túrótorta (13 000 Ft)</option>
+                        <option value="VOROS">Vörös bársony torta (12 000 Ft)</option>
+                        <option value="KINDER">Kinder Maxiking (11 000 Ft)</option>
+                        <option value="FEKETE_ERDO">Fekete Erdő torta (11 500 Ft)</option>
+                        <option value="SZABOLCSI">Szabolcsi Almás Mákos (14 000 Ft)</option>
+                        <option value="SACHER">Sacher torta (13 500 Ft)</option>
+                        <option value="GYEREK12">Gyerektorta (12 szeletes) (8 000 Ft)</option>
+                        <option value="GYEREK16">Gyerektorta (16 szeletes) (10 000 Ft)</option>
+                        <option value="ALOM">Álomtorta (Egyesztetés szerinti áron)</option>
+                    </select>
+                    <label for="datum">Megrendelés dátuma:</label>
+                    <input type="date" id="datum"><br>
+                    <textarea name="komment" id="komment" placeholder="Ide írhatja megjegyzését, ill. az Álomtortára vonatkozó kívánságait"></textarea><br>
+                    <input type="submit" value="Megrendelés" class="primary"> 
+                </form><br>
+                <p>Ha megrendelést helyez el, rövidesen visszajelezünk!</p>
+                <p>Ha bármilyen kérdése vagy probléma van, forduljon hozzánk!</p>
+                <img src="images/team.svg" alt="Rólunk" height="30px"> <br>
+                <a href="rólunk.html">About Us</a>
+            </section>
+        </div>
         
       </main>
 
